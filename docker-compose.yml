@@ -3,5 +3,7 @@ services:
   authentication.service:
     build:
       context: ./authentication.service
-    expose:
-      - "11000"
+    ports:
+      - "8080:11000"
+    volumes:
+      - .:/rubberstamp.authentication.provider.volume
