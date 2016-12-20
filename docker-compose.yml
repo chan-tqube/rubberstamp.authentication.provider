@@ -1,0 +1,7 @@
+version: '2'
+services:
+  authentication.service:
+    build:
+      context: ./authentication.service
+    expose:
+      - "11000"
